@@ -1,0 +1,18 @@
+{{ $hotel := hugo.Data.hotel }}
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <strong>{{ $hotel.name }}</strong>
+      <span>{{ $hotel.city }}, {{ $hotel.state }}</span>
+    </a>
+    <div class="nav-links">
+      <a href="{{ "/rooms/" | relURL }}">Rooms</a>
+      <a href="{{ "/amenities/" | relURL }}">Amenities</a>
+      <a href="{{ "/gallery/" | relURL }}">Gallery</a>
+      <a href="{{ "/location/" | relURL }}">Location</a>
+      <a href="{{ "/reviews/" | relURL }}">Reviews</a>
+      <a href="{{ "/contact/" | relURL }}">Contact</a>
+    </div>
+    <a class="button nav-cta" href="{{ $hotel.phone_href | safeURL }}">Call Now</a>
+  </nav>
+</header>

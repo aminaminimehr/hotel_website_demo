@@ -1,0 +1,18 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Cincinnati Area Hotel - Placeholder Name"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  description = "A professional hotel website template for an independent Cincinnati, Ohio area hotel with rooms, amenities, location information, reviews, and contact details."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.7
+  filename = "sitemap.xml"

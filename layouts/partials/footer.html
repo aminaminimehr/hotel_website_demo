@@ -1,0 +1,22 @@
+{{ $hotel := hugo.Data.hotel }}
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h2>{{ $hotel.name }}</h2>
+      <p>{{ $hotel.address.street }}<br>{{ $hotel.address.locality }}, {{ $hotel.address.region }} {{ $hotel.address.postal_code }}</p>
+      <p><a href="{{ $hotel.phone_href | safeURL }}">{{ $hotel.phone }}</a><br><a href="{{ $hotel.email_href | safeURL }}">{{ $hotel.email }}</a></p>
+    </div>
+    <div>
+      <h2>Plan Your Stay</h2>
+      <p>Convenient lodging for travelers visiting Cincinnati, Mason, and nearby Ohio attractions. Replace all placeholder information with verified hotel details before launch.</p>
+      <p>
+        <a href="{{ $hotel.facebook_url }}">Facebook</a> /
+        <a href="{{ $hotel.instagram_url }}">Instagram</a> /
+        <a href="{{ $hotel.linkedin_url }}">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; {{ now.Year }} {{ $hotel.name }}. Placeholder website content for review and replacement.</span>
+  </div>
+</footer>

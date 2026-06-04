@@ -1,0 +1,99 @@
+{{ define "main" }}
+{{ $hotel := hugo.Data.hotel }}
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">{{ $hotel.name }} - {{ $hotel.city }}, {{ $hotel.state }}</p>
+    <h1>Comfortable stays near Cincinnati and Mason.</h1>
+    <p class="hero-copy">A practical, welcoming hotel website starter for travelers visiting Cincinnati, Mason, local business destinations, and nearby attractions. Replace placeholders with verified property details before launch.</p>
+    <div class="cta-row">
+      <a class="button" href="{{ $hotel.phone_href | safeURL }}">Call Now</a>
+      <a class="button secondary" href="{{ $hotel.directions_url }}">Get Directions</a>
+      <a class="button ghost" href="{{ $hotel.booking_url | safeURL }}">Book on Expedia/Hotels.com</a>
+    </div>
+    <p class="photo-note">{{ $hotel.hero_image_note }}</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap split">
+    <div>
+      <div class="section-head">
+        <h2>A dependable base for Cincinnati area travel.</h2>
+        <p>Position the property for guests visiting Cincinnati, Mason, regional offices, family events, tournaments, hospitals, universities, and Ohio attractions after those details are confirmed.</p>
+      </div>
+      <a class="button" href="{{ "/location/" | relURL }}">Explore Location</a>
+    </div>
+    <div class="media-placeholder tall"><span>Replace with exterior, lobby, breakfast area, or guest arrival photo.</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Featured amenities</h2>
+      <p>Only publish confirmed amenities. These items are placeholders until the hotel team verifies what is available.</p>
+    </div>
+    <div class="grid three">
+      {{ range first 6 $hotel.amenities }}
+      <article class="card">
+        <h3>{{ . }}</h3>
+        <p>Replace with a short, accurate description of this verified amenity.</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Room highlights</h2>
+      <p>Help guests compare room options with clear, verified details about bed types, accessibility, work space, and in-room features.</p>
+    </div>
+    <div class="grid two">
+      <div class="media-placeholder"><span>Replace with guest room photo.</span></div>
+      <div class="card">
+        <ul class="feature-list">
+          {{ range $hotel.room_highlights }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid two">
+    <div class="card">
+      <blockquote class="quote">
+        <p>"[PLACEHOLDER: Add a real guest review only after receiving permission or sourcing it from a public review platform.]"</p>
+        <cite>- [PLACEHOLDER Guest Name or Review Source]</cite>
+      </blockquote>
+    </div>
+    <div>
+      <div class="section-head">
+        <h2>Guest feedback</h2>
+        <p>Use this section for real, attributed reviews from Expedia, Hotels.com, Google, or direct guest feedback. Do not invent quotes or ratings.</p>
+      </div>
+      <a class="button secondary" href="{{ "/reviews/" | relURL }}">Read Reviews</a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Find us in the Cincinnati area</h2>
+      <p>{{ $hotel.address.street }}, {{ $hotel.address.locality }}, {{ $hotel.address.region }} {{ $hotel.address.postal_code }}</p>
+    </div>
+    <div class="map-box">
+      <div>
+        <strong>[PLACEHOLDER Google Map]</strong>
+        <p>Replace with the Google Maps embed code in the location template after the address is confirmed.</p>
+        <a class="button secondary" href="{{ $hotel.directions_url }}">Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

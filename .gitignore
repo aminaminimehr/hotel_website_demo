@@ -1,0 +1,15 @@
+# Hugo generated output
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# Local server logs
+hugo-server.log
+hugo-server.err.log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
