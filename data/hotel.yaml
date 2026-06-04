@@ -22,7 +22,7 @@ maps_embed_url: ""
 facebook_url: ""
 instagram_url: ""
 linkedin_url: ""
-hero_image_note: "Add a current exterior or lobby photo before launch."
+hero_image_note: "Hotel images are served from static/images/hotel."
 og_description: "Stay at La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason, a Mason, Ohio hotel near Kings Island with complimentary breakfast, free Wi-Fi, free parking, an indoor pool, and hot tub."
 amenities:
   - "Complimentary Breakfast"

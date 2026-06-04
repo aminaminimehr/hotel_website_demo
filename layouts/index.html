@@ -1,16 +1,22 @@
 {{ define "main" }}
 {{ $hotel := hugo.Data.hotel }}
 <section class="hero">
+  <div class="hero-slideshow" aria-hidden="true">
+    <img src="{{ "/images/hotel/Home_page_Slideshow/53078_exterior_day_1.webp" | relURL }}" alt="">
+    <img src="{{ "/images/hotel/Home_page_Slideshow/52988_Guestroom_NK1_1.avif" | relURL }}" alt="">
+    <img src="{{ "/images/hotel/Home_page_Slideshow/52988_Pool_2.avif" | relURL }}" alt="">
+    <img src="{{ "/images/hotel/Home_page_Slideshow/52988_BreakfastBar_1.avif" | relURL }}" alt="">
+  </div>
   <div class="hero-inner">
-    <p class="eyebrow">{{ $hotel.name }} - {{ $hotel.city }}, {{ $hotel.state }}</p>
-    <h1>Comfortable Stays Near Kings Island</h1>
-    <p class="hero-copy">Stay in a convenient Mason, Ohio location with comfortable rooms and suites, complimentary breakfast, free Wi-Fi, free parking, an indoor pool, and hot tub.</p>
+    <p class="eyebrow">{{ $hotel.city }}, {{ $hotel.state }} - Near Kings Island</p>
+    <h1>{{ $hotel.name }}</h1>
     <div class="cta-row">
       <a class="button" href="{{ $hotel.phone_href | safeURL }}">Call Now</a>
       <a class="button secondary" href="{{ $hotel.directions_url }}">Get Directions</a>
       <a class="button ghost" href="{{ "/amenities/" | relURL }}">View Amenities</a>
     </div>
-    <p class="photo-note">Add a current exterior, lobby, or guest arrival photo before launch.</p>
+    <p class="hero-tagline">Comfortable Stays Near Kings Island</p>
+    <p class="hero-copy">Stay in a convenient Mason, Ohio location with comfortable rooms and suites, complimentary breakfast, free Wi-Fi, free parking, an indoor pool, and hot tub.</p>
   </div>
 </section>
 
@@ -23,7 +29,9 @@
       </div>
       <a class="button" href="{{ "/location/" | relURL }}">Explore Location</a>
     </div>
-    <div class="media-placeholder tall"><span>Exterior, lobby, breakfast area, or guest arrival photo area.</span></div>
+    <figure class="feature-photo tall">
+      <img src="{{ "/images/hotel/Entrance/52988_Lobby_1.avif" | relURL }}" alt="Lobby seating at La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason">
+    </figure>
   </div>
 </section>
 
@@ -51,7 +59,9 @@
       <p>The hotel offers 90 guest rooms and suites with practical in-room comforts for Mason and Cincinnati northeast travelers.</p>
     </div>
     <div class="grid two">
-      <div class="media-placeholder"><span>Guest room photo area.</span></div>
+      <figure class="feature-photo">
+        <img src="{{ "/images/hotel/Rooms/52988_Guestroom_NK1_1.avif" | relURL }}" alt="Guest room at La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason">
+      </figure>
       <div class="card">
         <ul class="feature-list">
           {{ range $hotel.room_highlights }}
@@ -87,13 +97,8 @@
       <h2>Find us in Mason, Ohio</h2>
       <p>{{ $hotel.address.street }}, {{ $hotel.address.locality }}, {{ $hotel.address.region }} {{ $hotel.address.postal_code }}</p>
     </div>
-    <div class="map-box">
-      <div>
-        <strong>Google Maps Embed Placeholder</strong>
-        <p>Add the official Google Maps iframe for 9918 Escort Dr, Mason, OH 45040 when ready.</p>
-        <a class="button secondary" href="{{ $hotel.directions_url }}">Get Directions</a>
-      </div>
-    </div>
+    {{ partial "google-map.html" . }}
+    <p><a class="button secondary" href="{{ $hotel.directions_url }}">Get Directions</a></p>
   </div>
 </section>
 {{ end }}
