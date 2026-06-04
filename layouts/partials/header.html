@@ -14,5 +14,18 @@
       <a href="{{ "/contact/" | relURL }}">Contact</a>
     </div>
     <a class="button nav-cta" href="{{ $hotel.phone_href | safeURL }}">Call Now</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="{{ "/rooms/" | relURL }}">Rooms</a>
+    <a href="{{ "/amenities/" | relURL }}">Amenities</a>
+    <a href="{{ "/gallery/" | relURL }}">Gallery</a>
+    <a href="{{ "/location/" | relURL }}">Location</a>
+    <a href="{{ "/reviews/" | relURL }}">Reviews</a>
+    <a href="{{ "/contact/" | relURL }}">Contact</a>
+  </div>
 </header>

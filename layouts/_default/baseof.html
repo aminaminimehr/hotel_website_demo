@@ -9,6 +9,8 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
+    {{ $nav := resources.Get "js/nav.js" | minify | fingerprint }}
+    <script src="{{ $nav.RelPermalink }}" defer></script>
     {{ $lightbox := resources.Get "js/lightbox.js" | minify | fingerprint }}
     <script src="{{ $lightbox.RelPermalink }}" defer></script>
   </body>
