@@ -1,4 +1,4 @@
-{{ $hotel := hugo.Data.hotel }}
+{{ $hotel := site.Data.hotel }}
 {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
 {{ $description := .Params.description | default site.Params.description }}
 <meta charset="utf-8">
