@@ -1,2 +1,2 @@
 # hotel_website_demo
-A demo website in a Hotel in Cincinnati Ohio for test
+A demo website of a Hotel in Cincinnati Ohio for test
