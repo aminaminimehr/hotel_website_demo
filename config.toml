@@ -1,11 +1,11 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "Cincinnati Area Hotel - Placeholder Name"
+title = "La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
-  description = "A professional hotel website template for an independent Cincinnati, Ohio area hotel with rooms, amenities, location information, reviews, and contact details."
+  description = "La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason is a Mason, Ohio hotel near Kings Island with complimentary breakfast, free Wi-Fi, free parking, an indoor pool, and hot tub."
 
 [markup]
   [markup.goldmark]

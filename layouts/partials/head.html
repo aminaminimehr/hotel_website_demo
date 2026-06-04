@@ -22,7 +22,11 @@
   "legalName": "{{ $hotel.legal_name }}",
   "description": "{{ $hotel.og_description }}",
   "telephone": "{{ $hotel.phone }}",
-  "email": "{{ $hotel.email }}",
+  {{ with $hotel.email }}"email": "{{ . }}",{{ end }}
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "3"
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ $hotel.address.street }}",
@@ -31,11 +35,15 @@
     "postalCode": "{{ $hotel.address.postal_code }}",
     "addressCountry": "{{ $hotel.address.country }}"
   },
-  "url": "{{ site.BaseURL }}",
+  "url": "{{ site.BaseURL }}"
+  {{ if or $hotel.facebook_url $hotel.instagram_url $hotel.linkedin_url }},
   "sameAs": [
-    "{{ $hotel.facebook_url }}",
-    "{{ $hotel.instagram_url }}",
-    "{{ $hotel.linkedin_url }}"
+    {{ $links := slice }}
+    {{ with $hotel.facebook_url }}{{ $links = $links | append . }}{{ end }}
+    {{ with $hotel.instagram_url }}{{ $links = $links | append . }}{{ end }}
+    {{ with $hotel.linkedin_url }}{{ $links = $links | append . }}{{ end }}
+    {{ range $i, $link := $links }}{{ if $i }},{{ end }}"{{ $link }}"{{ end }}
   ]
+  {{ end }}
 }
 </script>

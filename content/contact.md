@@ -1,36 +1,33 @@
 ---
 title: "Contact"
-description: "Contact page for a Cincinnati, Ohio area hotel with placeholder phone, address, email, directions, and booking links."
+description: "Contact La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason at +1 (513) 916-2831 or visit 9918 Escort Dr, Mason, OH 45040."
 ---
 
 ## Contact the Hotel
 
-Use this page for verified hotel contact details and booking links.
+Contact La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason for questions about stays in Mason, Ohio near Kings Island.
+
+<p><a class="button" href="tel:+15139162831">Call Now</a></p>
 
 <div class="grid two">
   <article class="card">
     <h3>Phone</h3>
-    <p><a href="tel:+10000000000">[PLACEHOLDER Phone Number]</a></p>
-  </article>
-  <article class="card">
-    <h3>Email</h3>
-    <p><a href="mailto:replace-with-hotel-email@example.com">[PLACEHOLDER Email Address]</a></p>
+    <p><a href="tel:+15139162831">+1 (513) 916-2831</a></p>
   </article>
   <article class="card">
     <h3>Address</h3>
-    <p>[PLACEHOLDER Street Address]<br>Cincinnati, OH [PLACEHOLDER ZIP Code]</p>
+    <p>9918 Escort Dr<br>Mason, OH 45040</p>
   </article>
   <article class="card">
-    <h3>Booking</h3>
-    <p><a href="#replace-with-expedia-or-hotels-com-url">Book on Expedia/Hotels.com</a></p>
+    <h3>Check-In</h3>
+    <p>3:00 PM - Midnight</p>
+  </article>
+  <article class="card">
+    <h3>Check-Out</h3>
+    <p>11:00 AM</p>
   </article>
 </div>
 
-## Replace Before Launch
+## Directions
 
-- Hotel name and legal business name
-- Phone number and email
-- Verified street address
-- Google Maps directions and embed
-- Expedia, Hotels.com, or official booking URL
-- Social media profile URLs
+<p><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=9918%20Escort%20Dr%20Mason%20OH%2045040">Get Directions</a></p>

@@ -1,30 +1,30 @@
 ---
 title: "Location"
-description: "Cincinnati, Ohio area hotel location page with placeholder address, directions, and nearby attraction content."
+description: "La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason is located at 9918 Escort Dr, Mason, OH 45040 near Kings Island and Deerfield Towne Center."
 ---
 
-## Stay Near Cincinnati, Mason, and Regional Destinations
+## Mason, Ohio Hotel Near Kings Island
 
-This hotel website is written for guests looking for lodging in the Cincinnati, Ohio area, including travelers visiting Mason and nearby attractions. Replace the sections below with confirmed drive times and neighborhood details.
+La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason is located northeast of Cincinnati at 9918 Escort Dr in Mason, Ohio. The location is convenient for travelers visiting Kings Island, shopping, local business destinations, and outdoor recreation.
 
 <div class="map-box">
   <div>
-    <strong>[PLACEHOLDER Google Maps Embed]</strong>
-    <p>Paste the verified Google Maps iframe here after confirming the hotel address.</p>
+    <strong>Google Maps Embed Placeholder</strong>
+    <p>Add the official Google Maps iframe for 9918 Escort Dr, Mason, OH 45040.</p>
   </div>
 </div>
 
 ## Address
 
-[PLACEHOLDER Street Address]  
-Cincinnati, OH [PLACEHOLDER ZIP Code]
+9918 Escort Dr  
+Mason, OH 45040
 
-## Nearby Places to Mention After Verification
+## Nearby Destinations
 
-- Cincinnati attractions relevant to the property
-- Mason area destinations relevant to the property
-- Corporate offices or event venues near the hotel
-- Airports, universities, hospitals, sports venues, or convention centers only if accurate
+- Kings Island
+- Deerfield Towne Center
+- Governor's Plaza
+- Lindner Family Tennis Center
+- Little Miami State Park
 
-<p><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Cincinnati%20Ohio%20hotel">Get Directions</a></p>
-
+<p><a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=9918%20Escort%20Dr%20Mason%20OH%2045040">Get Directions</a></p>

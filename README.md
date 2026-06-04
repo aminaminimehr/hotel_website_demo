@@ -1,8 +1,8 @@
 # Cincinnati Area Hotel Hugo Website
 
-This is a professional static Hugo website for an independent or medium-level hotel in the Cincinnati, Ohio area. It includes a responsive homepage, room, amenities, gallery, location, reviews, and contact pages, plus SEO metadata and Hotel schema.org structured data.
+This is a professional static Hugo website for La Quinta Inn & Suites by Wyndham Cincinnati NE - Mason in Mason, Ohio. It includes a responsive homepage, room, amenities, gallery, location, reviews, and contact pages, plus SEO metadata and Hotel schema.org structured data.
 
-The project intentionally uses placeholders where exact hotel details are unknown. Replace those values before publishing.
+The website uses verified hotel details for the property information currently available.
 
 ## Local Development
 
@@ -47,7 +47,7 @@ git remote set-url origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 git push -u origin main
 ```
 
-## Replace These Placeholders
+## Hotel Details
 
 Most hotel facts live in `data/hotel.yaml`:
 
@@ -74,7 +74,7 @@ Page-specific text is in `content/`:
 
 ## Photos
 
-The first version uses visual placeholders. Replace them with real, property-owned hotel photos before launch. Good starting images include:
+The first version uses temporary image panels. Replace them with real, property-owned hotel photos before launch. Good starting images include:
 
 - Exterior
 - Lobby
@@ -101,7 +101,7 @@ The site includes:
 - `sitemap.xml` through Hugo
 - Natural Cincinnati, Ohio, Mason, and nearby attraction language
 
-Before publishing, remove or replace every `[PLACEHOLDER ...]` value. Search the project for `[PLACEHOLDER` to find remaining items.
+Before publishing, add final production assets such as real hotel photography and the official Google Maps embed.
 
 ## License
 
