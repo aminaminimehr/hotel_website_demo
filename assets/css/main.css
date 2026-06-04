@@ -331,6 +331,22 @@ a {
   padding: 24px;
 }
 
+.map-embed {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
 .page-hero {
   padding: 58px 20px 34px;
   background: var(--surface);
@@ -416,4 +432,3 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
